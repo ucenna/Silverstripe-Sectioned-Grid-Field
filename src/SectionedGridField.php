@@ -19,6 +19,8 @@ class SectionedGridField extends GridField {
      * @param string $content
      *
      * @return string
+     *
+     * added functionality to support appending content before or after a row
      */
 
     protected function newRow($total, $index, $record, $attributes, $content)
@@ -50,7 +52,10 @@ class SectionedGridField extends GridField {
       $allRows = $beforeRow.$row.$afterRow;
       return $allRows;
     }
-
+    /**
+    * Disabled the base functionality for getManipulatedList
+    * because it's incompatible with GridFieldSubGrid
+    */
     public function getManipulatedList()
     {
         return $this->getList();
