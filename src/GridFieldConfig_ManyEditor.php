@@ -20,7 +20,7 @@ class GridFieldConfig_ManyEditor extends GridFieldConfig
     /**
      * @param string $childlist - name of childlist to expand
      */
-    public function __construct($childlist)
+    public function __construct($childlist, $config = null)
     {
         parent::__construct();
         $this->addComponent(new GridFieldToolbarHeader());
@@ -31,7 +31,7 @@ class GridFieldConfig_ManyEditor extends GridFieldConfig
         $this->addComponent(new GridFieldEditButton());
         $this->addComponent(new GridFieldDeleteAction());
         $this->addComponent(new GridFieldDetailForm());
-        $this->addComponent(new GridFieldSubGrid($childlist));
+        $this->addComponent(new GridFieldSubGrid($childlist, $config));
         //$this->addComponent(new GridFieldSubGrid($childlist));
     }
 }
