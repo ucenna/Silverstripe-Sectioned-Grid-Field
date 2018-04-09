@@ -125,19 +125,4 @@ class GridFieldSubGrid implements GridField_RowProvider
            'after_row' => $after_row,
          );
      }
-
-     public function FieldHolder($gridField, $properties = array())
-     {
-       $list = $gridField->getList();
-       $child = 'Items';
-       $displayList = '';
-       foreach($gridField as $key => $item){
-         $dataList = $item->getComponents($child);
-         $grid = GridField::create($gridField->name.'/i'.'tem/'.$item->ID.'/ItemEditForm/field/Items', $gridField->title.' '.($key+1), $dataList, $this->getConfig);
-         $grid->setForm($gridField->form);
-
-         $displayList = $displayList.$grid->FieldHolder($properties);
-       }
-       return $displayList;
-     }
 }
