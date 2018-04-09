@@ -25,7 +25,6 @@ class GridFieldConfig_Min extends GridFieldConfig
         $this->addComponent(new GridFieldButtonRow('after'));
         $this->addComponent(new GridFieldAddNewButton('buttons-after-right'));
         $this->addComponent(new GridFieldDataColumns());
-        $this->addComponent(new GridFieldSortableHeader());
         $this->addComponent(new GridFieldEditButton());
         $this->addComponent(new GridFieldDeleteAction());
         $this->addComponent(new GridFieldDetailForm());

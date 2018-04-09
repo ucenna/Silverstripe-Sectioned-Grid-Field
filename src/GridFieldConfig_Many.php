@@ -26,6 +26,7 @@ class GridFieldConfig_Many extends GridFieldConfig
         $this->addComponent(new GridFieldToolbarHeader());
         $this->addComponent(new GridFieldButtonRow('before'));
         $this->addComponent(new GridFieldAddNewButton('buttons-before-left'));
+        $this->addComponent(new GridFieldSortableHeader());
         $this->addComponent(new GridFieldDataColumns());
         $this->addComponent(new GridFieldEditButton());
         $this->addComponent(new GridFieldDeleteAction());
