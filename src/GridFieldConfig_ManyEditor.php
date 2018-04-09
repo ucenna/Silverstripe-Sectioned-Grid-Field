@@ -15,7 +15,7 @@ use SilverStripe\Versioned\Versioned;
  * A simple readonly, paginated view of records, with sortable and searchable
  * headers.
  */
-class GridFieldConfig_Many extends GridFieldConfig
+class GridFieldConfig_ManyEditor extends GridFieldConfig
 {
     /**
      * @param string $childlist - name of childlist to expand
