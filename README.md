@@ -12,3 +12,4 @@ $fields->addFieldToTab('Root.Regions', SectionedGridField::create(
 ```
 `GridFieldConfig_ManyEditor` is a GridFieldConfig that implements the `GridFieldSubGrid` component and takes a `$has_many` or `many_many` to parse into a child GridField. It can optionally be passed a GridFieldConfig that will be used to parse the child GridField like so: `new GridFieldConfig_ManyEditor('Items', new GridFieldConfig_RecordEditor()`
 
+![Example Image](Silverstripe-Sectioned-Grid-Field/Docs/example_1.png  "Example 1")
