@@ -10,6 +10,8 @@
   "silverstripe/framework": "^4.0",
   "silverstripe/cms": "^4.0"
 },
+"minimum-stability": "dev",
+"prefer-stable": true,
 "extra": {
     "installer-name": "sectioned-gridfield"
 },
