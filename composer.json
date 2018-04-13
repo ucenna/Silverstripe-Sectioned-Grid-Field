@@ -1,0 +1,24 @@
+{
+"name": "ucenna/silverstripe-sectioned-gridfield",
+"description": "Add sub grids to your gridfields.",
+"keywords": [
+  "silverstripe",
+  "gridfield"
+],
+"type": "silverstripe-vendormodule",
+"require": {
+  "silverstripe/framework": "^4.0",
+  "silverstripe/cms": "^4.0"
+},
+"extra": {
+    "installer-name": "sectioned-gridfield"
+},
+"license": "BSD-3-Clause",
+"authors": [
+    {
+        "name": "John Bolle",
+        "email": "holycarhorn@gmail.com",
+        "homepage": "http://ucenna.com"
+    }
+]
+}
