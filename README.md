@@ -1,5 +1,11 @@
 # Silverstripe-Sectioned-Grid-Field
 
+## Requirements ##
+* [silverstripe/silverstripe-framework](https://github.com/silverstripe/silverstripe-framework) ^4.0
+
+## Installation ##
+`composer require ucenna/silverstripe-sectioned-gridfield`
+
 ## Usage ##
 Sectioned GridField extends the GridField class, albiet with added functionality to allow components to modify//expand grid rows. Configuration is more or less the same between the two.
 ```php
@@ -10,6 +16,7 @@ $fields->addFieldToTab('Root.Regions', SectionedGridField::create(
  new GridFieldConfig_ManyEditor('Items')
 ));
 ```
+
 ## GridFieldConfig_ManyEditor ##
 `GridFieldConfig_ManyEditor` is a GridFieldConfig that implements the `GridFieldSubGrid` component and takes a `$has_many` or `many_many` to parse into a child GridField. It can optionally be passed a GridFieldConfig that will be used to parse the child GridField like so: `new GridFieldConfig_ManyEditor('Items', new GridFieldConfig_RecordEditor()`. If no GridFieldConfig is specified, `GridFieldConfig_Min` will be used by default.
 
