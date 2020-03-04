@@ -91,7 +91,7 @@ class GridFieldSubGrid implements GridField_RowProvider
      {
        $list = $item->getComponents($this->child);
        $grid = GridField::create(
-         $gridField->name.'/item/'.$item->ID.'/ItemEditForm/field/Items',
+         $gridField->name.'/item/'.$item->ID.'/ItemEditForm/field/'.$this->child,
          $this->child,
          $list,
          $this->config
