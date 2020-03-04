@@ -105,6 +105,7 @@ class GridFieldSubGrid implements GridField_RowProvider
        $RowData = HTML::createTag(
          'td',
          [
+           'class' => "subgrid",
            'colspan' => $gridField->getColumnCount(),
            'style' => 'padding: 2% 10%;'
          ],
